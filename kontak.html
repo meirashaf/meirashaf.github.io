@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Oisu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" href="img/title.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <br><br>
+        <a href="index.html" class="center">
+            <img src="img/main-logo.png" style="width: 140px; height: 140px;" class="center">
+        </a>
+        <h3><b>Contact</b></h3>
+    </header>
+    
+    <nav class="nav1" style="font-family: Manjari; font-weight: bold;">
+        <li><a id="navy" href="index.html">Home</a></li>
+        <li><a id="navy" href="buddies.html">Buddies</a></li>
+        <li><a id="navy" href="kontak.html">Contact</a></li>
+        <!-- <li><a id="navy" href="#kontak">Contact Us</a></li> -->
+    </nav>
+
+    <div class="satu" id="dua">
+        <div class="kata">
+            <form>
+
+                <label for="name">Nama</label>
+                <br>
+                <input type="text" id="name" name="name" style="width: 100%; height: 25px;" 
+                placeholder="  Nama kamu..." 
+                required
+                oninvalid="this.setCustomValidity('Harap isi bidang ini.')"
+                onvalid="this.setCustomValidity('')">
+                
+                <br><br>
+                Kota/Kabupaten
+                <br>
+                <select name="number" id="number" style="width: 100%; height: 38px;">
+                    <option value="1">Kabupaten Bandung</option>
+                    <option value="2">Kabupaten Bandung Barat</option>
+                    <option value="3">Kabupaten Bekasi</option>
+                    <option value="4">Kota Bandung</option>
+                    <option value="5">Kota Banjar</option>
+                    <option value="6">Kota Bekasi</option>
+                    <option value="7">Kota Bogor</option>
+                    <option value="8">Kota Depok</option>
+                    <option value="9">Kota Sukabumi</option>
+                <option value="10">Kota Tasikmalaya</option>
+                </select>
+    
+                <br><br>
+                <label for="deskrip">Pesan</label>
+                <br>
+                <textarea name="reviews" rows=11 cols=50 maxlength=250 required
+                    oninvalid="this.setCustomValidity('Harap isi bidang ini.')"
+                    onvalid="this.setCustomValidity('')"></textarea>
+                <br><br>
+                
+                <input class="tombol" type="submit" value="Submit">
+                
+            </form>
+        </div>
+    </div>
+    
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    
+    <div class="profil">
+        <div class="id">
+            <h2 style="	text-align: center;">Profil Diri</h2>
+            <img src="img/profil.jpeg" class="center" style="width: 70%;">
+            
+            <br>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Shafa Meira W.</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>2007723</td>
+                </tr>
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <td>Perempuan</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>shafameira@upi.edu</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <footer><h3>Praktikum Desain dan Pemrograman Web</h3></footer>
+
+    <!-- <script>
+        function myFunction() {
+          document.getElementById("myForm").reset();
+        }
+    </script> -->
+        
+
+</body>
+</html>
