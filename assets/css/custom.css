@@ -1,0 +1,22 @@
+.kartu{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.kartu-y{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.kartu-mid{
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+
+.space-line{
+    line-height: 1.8;
+}
+
+.space-line1.6{
+    line-height: 1.4;
+}

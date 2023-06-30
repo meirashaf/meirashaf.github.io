@@ -1,77 +1,441 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Oisu</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="icon" href="img/title.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shafa Meira Wahyono - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-s.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Jun 13 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <header>
-        <br><br>
-        <a href="index.html" class="center">
-            <img src="img/main-logo.png" style="width: 140px; height: 140px;" class="center">
-        </a>
-        <h3><b>Boneka Oisu</b></h3>
-    </header>
-    
-    <nav class="nav1" style="font-family: Manjari; font-weight: bold;">
-        <li><a id="navy" href="index.html">Home</a></li>
-        <li><a id="navy" href="buddies.html">Buddies</a></li>
-        <li><a id="navy" href="kontak.html">Contact</a></li>
-        <!-- <li><a id="navy" href="#kontak">Contact Us</a></li> -->
-    </nav>
-<br>
-    <div class="satu">
-        <div class="kata" >
-            <h2>Introduction</h2>
-            <img src="img/fly.jpeg" class="center" style="width: 100%;">
-            <p>Boneka Oisu atau lebih dikenal dengan nama Oisu Labisa Pasu merupakan boneka babi yang sangat imut. 
-                This plushie is a toy made from cloth and filled with a soft material so that it is pleasant to hold. 
-                Dengan ukuran sekitar 20 cm, Oisu dapat dengan mudah dibawa bepergian! Nothing could not be achieved, when even pigs could fly!</p>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a target="_blank" href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a target="_blank" href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a target="_blank" href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a target="_blank" href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Shafa Meira Wahyono</h1>
+      <!-- <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> -->
+      <p>Computer Science Undergraduate Student</p>
+      <div class="social-links">
+        <a target="_blank" href="https://www.instagram.com/meirashaf/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/shafa-meira-wahyono-b861a01b6/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/meirashaf" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+      <h5 class="mt-3">Take a quick look at my <a target="_blank" href="https://drive.google.com/file/d/1Td0dEZf_KXkVuoVc_ms4WzZGYF4rFW8t/view?usp=sharing">CV!</a></h5>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Me</h2>          
         </div>
+        
+        <div class="text-left card border-0 mb-4" style="max-width: 1000px;">
+          <div class="row g-0">
+            <div class="col-md-4 kartu-mid px-4">
+              <img src="assets/img/profil.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8 kartu-mid">
+              <div class="mx-4 px-4 pt-4">
+                <h4 class="card-title"><b>Shafa Meira Wahyono</b></h4>
+                <p class="text-left">Computer Science Undergraduate, 7th Semester Student of Universitas Pendidikan Indonesia. Experienced in Project Management for Website development and managed to solve various unexpected problem that arise while leading a team. Interested in Competitive Programming, Website Development, Machine Learning, and Project Management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Shafa Meira Wahyono</h4>
+              <ul>
+                <li>Bandung, Jawa Barat, Indonesia</li>
+                <li>(+62) 81804566611</li>
+                <li>meirashaf@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Computer Science Undergraduate Student</h4>
+              <h5>(7th Semester) 2020 - Present</h5>
+              <p><em>Universitas Pendidikan Indonesia</em></p>
+              <ul>
+                <li>GPA: 3.82/4.00 (<a target="_blank" href="https://drive.google.com/file/d/1S4oIQ8sacrg4pH_Kwzz72pLFvUsPjLba/view?usp=sharing">transcript</a>)</li>
+                <li>Organization: BEM KEMAKOM UPI</li>
+                <li>Volunteer: MOKAKU UPI and UKM Great</li>
+                <li>Awards: Competitive Programming Finalist of HOLOGY 4.0</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Machine Learning Student</h4>
+              <h5>02/2023 - 07/2023</h5>
+              <p><em>Bangkit Academy (Independent Study Program)</em></p>
+              <ul>
+                <li>Learn the key concepts and applications of AI to solve a wide range of Machine Learning problems.</li>
+                <li>Summary of learned courses: Python programming, Data Analytics, Mathematic for Machine Learning, Machine Learning Specialization, and TensorFlow Data and Deployment.</li>
+                <li>Built recommendation system of Machine Learning model using Scikit-Learn and TensorFlow for capstone project.</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Honors & Awards</h3>
+            <div class="resume-item">
+              <h4>Competitive Programming Finalist</h4>
+              <h5>12/2021</h5>
+              <p><em>HOLOGY 4.0 (Universitas Brawijaya)</em></p>
+              <i><a target="_blank"  href="https://drive.google.com/file/d/1U1FSbY1r2zPhYtmM4GujCYbFfstlOaxp/view?usp=drive_link">Certificate</a></i>
+              <p>My team, AMDskuy, managed to solve variety of computational problems using C++ language.</p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <h3 class="resume-title">Organization Experience</h3>
+            <div class="resume-item">
+              <h4>Lead of Technology Bureau</h4>
+              <h5>01/2022 - 01/2023</h5>
+              <p><em>BEM KEMAKOM UPI</em></p>
+              <i><a target="_blank"  href="https://drive.google.com/file/d/1U1783Zbseyb2GRbBZnq2x1LA4ohePCEl/view?usp=drive_link">Certificate</a></i>
+              <ul>
+                <li>Responsible to lead the team to maintain and develop the student departement website (<a target="_blank" href="http://kemakom.org/">kemakom.org</a>), while also participating in the organization various events.</li>
+                <li>Initiate work flow in maintaining and developing the website.</li>
+                <li>Restructured and further developed the home page and the content management system. </li>
+                <li>Monitor staffs progress and present our works on monthly-basis.</li>
+              </ul>
+            </div>            
+            <h3 class="resume-title">Volunteer</h3>
+            <div class="resume-item">
+              <h4>Campaign Coordinator</h4>
+              <h5>10/2021</h5>
+              <p><em>UKM Gender Research Student Center </em></p>
+              <i><a target="_blank"  href="https://drive.google.com/file/d/1U2XdSMhRlxVhQQ0Z59DYbXg8bo8O3Q4V/view?usp=drive_link">Certificate</a></i>
+              <p>I served as Campaign Coordinator that is responsible to guide and lead staff to promote the organization workshop to our assigned faculty.</p>
+            </div>            
+            <div class="resume-item">
+              <h4>Mentor of First-year Students</h4>
+              <h5>07/2021 - 09/2021</h5>
+              <p><em>MOKAKU (Orientation Program) UPI</em></p>
+              <p>I served as a mentor for 28 mentees and responsible to guide and teach them the duties and responsibilities of a university student</p>
+            </div>            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+
+        <!-- bukuku -->
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+  
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <!-- images porto -->
+              <div class="portfolio-details-slider swiper">
+                <img class="m-1" src="assets\img\portfolio\bukuku\capstone1.jpg">
+                <img class="m-1" src="assets\img\portfolio\bukuku\capstone2.jpg">
+                <img class="m-1" src="assets\img\portfolio\bukuku\capstone3.jpg">
+              </div>
+            </div>
+  
+            <div class="col-lg-8 space-line">
+              <!-- <div class="portfolio-info"> -->
+                <h2 class="ml-4"><b>BukuKu</b></h2>
+
+                <ul>
+                  <li><strong>Role</strong>: Machine Learning Model Developer and UI/UX Designer</li>
+                  <li><strong>Category</strong>: E-Book Mobile Application</li>
+                  <li><strong>Project date</strong>: 05/2023 - 06/2023</li>
+                  <li><strong>Kaggle</strong> <a target="_blank" href="https://www.kaggle.com/datasets/zygmunt/goodbooks-10k">Dataset</a></li>
+                  <li><strong>Github</strong> <a target="_blank" href="https://github.com/Nerszy/BukuKu">Repo</a></li>
+                  <li><strong>Figma</strong> <a target="_blank" href="https://www.figma.com/file/QlqVBcdwn7fg5PPdX5qEJT/Capstone-BukuKu?type=design&node-id=0-1&mode=design&t=yeg60HouxvSC684M-0">Page</a></li>
+                </ul>
+              <!-- </div>
+              <div class="portfolio-description mx-3"> -->
+                <p>
+                  BukuKu is an innovative application that is used for people who want to find and read books according to their interests. The aim of this app is to provide relevant and personalized book recommendations based on the user's interests and needs.
+                </p>
+                <ul>
+                  <li>Responsible to build Collaborative-filtering, designing the application interface using Figma, and coordinate with other division to deploy Machine Learning model to Google Cloud Platform.</li>
+                  <li>Research appropriate dataset for the model.</li>
+                  <li>Pre-process the dataset to extract available book data by scraping it from goodreads.com, using BeautifulSoup and then further pre-processing it using Microsoft Excel. Data reduced from 982.000 rows to 609.206 rows.</li>
+                  <li>Built the model with Scikit-Learn and TensorFlow, using Probabilistic Matrix Factorization method, resulting in 0.9 RMSE.</li>
+                  <li>Predicted result of recommended books are combined with result from Content-based filtering model, which results in hybrid recommendation.</li>
+                </ul>
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+      <!-- smart english -->
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+  
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <!-- images porto -->
+              <div class="portfolio-details-slider swiper">
+                <img class="m-1" src="assets\img\portfolio\smartenglish\foto1.jpg">
+                <img class="m-1" src="assets\img\portfolio\smartenglish\foto2.jpg">
+                <img class="m-1" src="assets\img\portfolio\smartenglish\foto3.jpg">
+              </div>
+            </div>
+  
+            <div class="col-lg-8 p-4 space-line">
+              <!-- <div class="portfolio-info"> -->
+                <h2 class="ml-4"><b>Smart English (Jatiuwung) Website</b></h2>
+                <ul>
+                  <li><strong>Role</strong>: Full-Stack Developer and Technical Writer Assistant</li>
+                  <li><strong>Category</strong>: Profiling Website using Content Management System</li>
+                  <li><strong>Project date</strong>: 04/2022 - 06/2022</li>
+                  <li><strong>Github</strong> <a target="_blank" href="https://github.com/meirashaf/Smart-English--Jatiuwung--Profile-Website">Repo</a></li>
+                  <li><strong>Figma</strong> <a target="_blank" href="https://www.figma.com/file/J1fp52McwSeuF0jEJJhW72/Smart-English-Web-Design?type=design&node-id=602-95&mode=design&t=Y8WqVHJELIM9jwnN-0">Page</a></li>
+                  <li><strong>Technical Documentation</strong> <a target="_blank" href="https://docs.google.com/document/d/1brUP9ZxIck0eA_rrC-4CX-QhHjEUtUOB/edit?usp=embed_facebook">Page</a></li>
+                </ul>
+              <!-- </div>
+              <div class="portfolio-description mx-3"> -->
+                <p class="space-line1.6">
+                  This project aimed to develop and document the media to profile Smart English Company as the perfect place to learn English for people who are interested to do it. While also enabling the media to be able to manage the website content using Content Management System feature. The website mainly separated into 2 sections, which are visitor page and admin page. The visitor page could be directly accessed through the main URL, while admin page is accessible by adding <code>/admin</code> sub-directory.
+                </p>
+                <ul>
+                  <li>Responsible to develop CMS (Content Management System) and assisting the writing of Technical Documentation.</li>
+                  <li>Developed the website using CodeIgniter 4, Bootstrap 5, and MySQL</li>
+                  <li>Technical Documentation used "IEEE Std 830-1993, IEEE Recommended Practice for Software Requirement Specifications" as reference.</li>
+                </ul>
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div><!-- End Portfolio Details Section -->
+
     </div>
 
-    <div class="satu" id="dua">
-        <div class="kata" >
-            <h2>Moment</h2>
-            <img src="img/sunset.jpeg" class="center" style="width: 100%;">
-            <p>Memandang matahari jauh disana. Tidak hanya oisu bisa menjadi boneka mainan bagi anak-anak, oisu 
-                juga dapat menjadi teman senja untuk berbincang ringan dan menyeruput kopi hitam yang nikmat (tentu 
-                bukan Oisu yang meminum kopi) xixi. 
-            </p>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= LICENSES & CERTIFICATIONS Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Licenses & Certifications</h2>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Machine Learning
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <ul>
+                  <li>Mathematics for Machine Learning Specialization (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/776MXY75DCLZ">Coursera</a>)</li>
+                  <li>Machine Learning Specialization (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/RV5RND6MHPZ3">Coursera</a>)</li>
+                  <li>TensorFlow: Data and Deployment Specialization (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QYPZL2KMV8GH">Coursera</a>)</li>
+                  <li>DeepLearning.AI TensorFlow Developer Specialization (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/S7GGCGT24FMX">Coursera</a>)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                English
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p>English Proficiency Certificate (Duolingo English Test): <a href="https://certs.duolingo.com/e82a7342a4be50feadce0f6153e2f79c">Certificate</a><br>
+                  <h5>Score: <strong>140</strong></h5></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+    <div>
+      <div class="ml-4 container" data-aos="fade-up">
+
+
+          <div class="row container-fluid ml-5">
+            <!--ADD CLASSES HERE d-flex align-items-stretch-->
+            <div class="card col-md-5 my-3 mx-4">
+                 <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">Soft Skill</h5>
+                  <p class="card-text mb-4"><ul>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Event Planning</li>
+                    <li>Creative Concept Design</li>
+                  </ul></p>
+                </div>
+            </div>
+            <!--ADD CLASSES HERE d-flex align-items-stretch-->
+            <div class="card col-md-5 my-3 mx-4">
+                 <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">Hard Skill</h5>
+                  <p class="card-text mb-4"><ul>
+                    <li>Website Development</li>
+                    <li>Machine Learning Model Development</li>
+                    <li>Data Analysis</li>
+                    <li>UI/UX Design</li>
+                    <li>Copywriting</li>
+                  </ul></p>
+                </div>
+            </div>
+            <!--ADD CLASSES HERE d-flex align-items-stretch-->
+            <div class="card col-md-5 my-3 mx-4">
+                 <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">Software</h5>
+                  <p class="card-text mb-4"> <ul>
+                    <li>Jupyter Notebook</li>
+                    <li>Figma</li>
+                    <li>Microsoft Office</li>
+                    <li>Trello</li>
+                    <li>Visual Studio Code</li>
+                    <li>Github</li>
+                  </ul></p>
+                </div>
+            </div>
+             <!--ADD CLASSES HERE d-flex align-items-stretch-->
+             <div class="card col-md-5 my-3 mx-4">
+                 <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-center">Language & Framework</h5>
+                  <p class="card-text my-4">C, C++, Python, R, MySQL, HTML, CSS, Javascript, PHP, Flutter, Bootstrap 5, CodeIgniter 4, TensorFlow, Scikit-Learn, Dart</p>
+                </div>
+            </div>
+
+          </div>
+      
+
+      </div>
+    </div><!-- End Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer d-flex mt-auto w-100 py-4 flex-shrink-0">
+    <div class="container py-4">
+        <div class="row gy-4 gx-5 container-fluid">
+            <div class="col-lg-4 col-md-6 px-6 container-fluid">
+                <h5 class="h1 ">Shafa Meira Wahyono</h5>
+                <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Bootstrapious.com</a></p>
+                <p class="small text-muted mb-0">&copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved. Designed by <a class="text-primary" href="https://bootstrapmade.com/">BootstrapMade</a></p>
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: [license-url] -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+            </div>
+            <div class=" col-md-6 container-fluid">
+                <h5 class=" mb-3"><br>Quick links</h5>
+                <ul class="list-unstyled text-muted">
+                    <li>Email : <a href="mailto:meirashaf@gmail.com">meirashaf@gmail.com</a></li>
+                    <li>Whatsapp/Phone Number : <a href="https://wa.me/6281804566611">(+62) 818 045 666 11</a></li>
+                    <li>LinkedIn : <a href="https://www.linkedin.com/in/shafa-meira-wahyono-b861a01b6/">Shafa Meira W.</a></li>
+                    <li>Github : <a href="https://github.com/meirashaf">meirashaf</a></li>
+                    <li>Instagram : <a href="https://www.instagram.com/meirashaf/">meirashaf</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    
-    <div class="profil">
-        <div class="id">
-            <h2 style="	text-align: center;">Profil Diri</h2>
-            <img src="img/profil.jpeg" class="center" style="width: 70%;">
-            
-            <br>
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <td>Shafa Meira W.</td>
-                </tr>
-                <tr>
-                    <th>NIM</th>
-                    <td>2007723</td>
-                </tr>
-                <tr>
-                    <th>Jenis Kelamin</th>
-                    <td>Perempuan</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>shafameira@upi.edu</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-    <footer><h3>Praktikum Desain dan Pemrograman Web</h3></footer>
+  <div id="preloader"></div>
+  <a target="_blank" href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
