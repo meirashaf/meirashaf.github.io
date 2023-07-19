@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+  	box-sizing: border-box;
+}
+.btn-round { border-radius: 30px; }
+.bg-navy { background: #2F3D66; }
+.bg-gray { background: #D3D9DD;}
+.bg-gradien { background-image: linear-gradient(to right top, #e33378, #d64288, #c74f94, #b65a9c, #a663a1, #9b73b5, #8e82c5, #7f91d1, #62adeb, #40c9f8, #36e3fa, #5ffbf1);}
+.text-pink{color: #F57A99;}
+.text-navy{color: #2F3D66;}
+.text-green{color: #91C1B6;}
+.underlineMisi{border: 1px solid #e259;padding-top: 0;}
+.underlineWhite{border: 2px solid #fff;}
+
+.text-small{
+    font-size: small;
+}
+
+.text-x-small{
+    font-size: x-small;
+}
+
+.btn{
+    margin: auto;
+    border-radius: 50px !important;
+    background-image: linear-gradient(to right top, #e33378, #d64288, #c74f94, #b65a9c, #a663a1, #9b73b5, #8e82c5, #7f91d1, #62adeb, #40c9f8, #36e3fa, #5ffbf1);
+    border: 0 !important;
+    color: white;
+}
+
+.tulisan{
+    background-image: url("../images/tulisan.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    min-height: 610px;
+}
+
+.section-dudu{
+    background-image: url("../images/DUDU.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 400px;
+}
+
+.landing{
+    margin: 50px 0;
+    padding: 0;
+}
+
+.landing-kanan{
+    color: #2F3D66;
+    padding-left: 10%;
+}
+
+.landing-kiri{
+    color: #2F3D66;
+}
+
+.nama{
+    font-size: x-small;
+    padding-top: 5px; 
+}
+
+.kamut{
+    font-size: small;
+    padding-top: 5px; 
+}
+
+.more{
+    animation: animateMore 4s ease-in-out infinite;
+    animation-delay: calc(var(--i)*0.25s);
+}
+
+@keyframes animateMore{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform:  translateY(10px);
+    }
+}
+
+/* wave */
+.wadah-wave{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    /* background-color: #2F3D66; */
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../images/wave-blue.png");
+    background-size: 1000px 100px;
+    animation: animateWave 4s ease-in-out infinite;
+    animation-delay: calc(var(--i)*0.25s);
+}
+
+.wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave#wave3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave#wave4{
+    z-index: 997;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animateWave{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform:  translateY(15px);
+    }
+}
+/* selesai wave */
+
+/* ukk komunitas */
+.ukk, .komunitas{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boxUKK, .boxKomunitas {
+    width: 350px;
+    height: 450px;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.boxUKK:hover, .boxKomunitas:hover  {
+    box-shadow: 0px 0px 25px #999999;
+    background-color: #fff;
+}
+
+.boxUKK h2, .boxKomunitas h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #2F3D66 !important;
+}
+
+.boxUKK p, .boxKomunitas p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #7a7a7a !important;
+}
+
+.boxUKK button, .boxKomunitas button {
+    width: 180px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 12px 12px 20px 0 rgb(254 76 28 / 30%);
+    transition: 0.5s;
+    position: absolute;
+    overflow: hidden;
+    padding: 1px;
+    top: 480px;
+    left: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.boxUKK button:before, .boxKomunitas button:before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 55px;
+    top: 0;
+    transition: .8s;
+    left: -150%;
+    bottom: 0;
+    background: linear-gradient(to left, rgb(255 255 255 / 25%), transparent);
+}
+
+.boxUKK button:hover, .boxKomunitas button:hover {
+    box-shadow: none;
+    color: white;
+}
+
+.boxUKK button:hover:before, .boxKomunitas button:hover:before {
+    left: 70%;
+}
+
+.boxUKK:hover button, .boxKomunitas:hover button {
+    position: absolute;
+    top: 420px;
+    left: 65px;
+    transition: 0.5s;
+    visibility: visible;
+}
+
+.newFooter{
+    box-sizing: border-box;
+}
+
+.underlineFooter{
+    border: 1px solid #fff;
+}
+
+.btn-bem-phone, .btn-dpm-phone, .btn-more-news-phone{
+    display: none;
+}
+
+.sosmed{
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.title{
+    font-size: large;
+}
+
+.col-12{
+    padding-left: 0;
+}
+
+.clickbait {
+  display: block;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.image-center{
+    display: block;
+    margin: 0 auto;
+}
+
+.angkatan-ig{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    /* background-color: #2F3D66; */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.2s all;
+}
+
+.angkatan-ig a{
+    color: #2F3D66;
+}
+
+.angkatan:hover .angkatan-ig{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/* selesai angkatan */
+
+/* halaman about */
+.uu{
+    background-color: white;
+    color: #2F3D66;
+}
+
+.uu a{
+    color: #F57A99;
+}
+
+.uu:hover{
+    transform: scale(1.05) !important;
+    transition: 600ms ease !important;
+    z-index: 1;
+}
+
+.uu:hover a{
+    color: #2F3D66;
+}
+
+.dokumen{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s all;
+}
+
+.uu:hover .dokumen{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/* selesai halaman about */
+
+/* filosofi logo */
+.wrapper-card{
+	box-sizing: border-box;
+	display: grid;
+	text-align: center;
+	margin: 90px auto;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.wrapper-card .box{
+	width: 270px;
+	margin: 0 auto;
+	position: relative;
+	perspective: 1000px;
+}
+
+.wrapper-card .box .front-face{
+	background: #fff;
+	height: 240px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+	transition: all 0.5s ease;
+}
+
+.box .front-face .icon{
+	height: 130px;
+}
+
+.box .front-face span{
+	color: #2F3D66;	
+}
+
+.box .back-face span{
+	color: #F57A99;	
+    font-weight: bold;
+    font-size: medium;
+}
+
+.box .back-face{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+    height: 240px;
+	width: 100%;
+	padding: 30px;
+	opacity: 0;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+    background: rgb(47,61,102);
+    background: linear-gradient(180deg, rgba(47,61,102,1) 0%, rgba(69,135,149,1) 45%, rgba(138,190,182,1) 100%);
+    color: white;
+	transform: translateY(110px) rotateX(-90deg);
+	box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+	transition: all 0.5s ease;
+    font-size: small;
+}
+
+.box .back-face p{
+	margin-top: 10px;
+}
+
+.box:hover .back-face{
+	opacity: 1;
+	transform: rotateX(0deg);
+}
+
+.box:hover .front-face{
+	opacity: 0;
+	transform: translateY(-110px) rotateX(90deg);
+}
+/*selesai filosofi logo*/
+
+/* dpm */
+.cover-dpm{
+    padding-top: 140px;
+  background-image: url("../images/Jumbotron.png");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.br-mobile{
+    display: none;
+}
+
+/* button hover */
+.lkr button, .lkrr button,
+.lkl button, .lkll button{
+    overflow: hidden;
+}
+
+.lkr button:before, .lkrr button:before,
+.lkl button:before, .lkll button:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: .8s;
+    left: -100%;
+    bottom: 0;
+    background: linear-gradient(to left, rgb(255 255 240 / 55%), transparent);
+}
+
+.lkr button:hover::before, .lkrr button:hover::before,
+.lkl button:hover::before, .lkll button:hover::before,
+.card-body:hover::before{
+    left: 100%;
+}
+
+/* .btn-more-news:before{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    top: 12px;
+    transition: .8s;
+    left: 71%;
+    bottom: 0;
+    background: linear-gradient(to left, rgb(255 255 240 / 55%), transparent);
+    
+}
+.btn-more-news:hover::before{left: 90%;} */
+
+.sosmed-dpm{
+    width: 150px;
+    padding: 3px 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    position: relative;
+    top: -25px;
+    left: calc(50% - 70px);
+    z-index: 11;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.2s all;
+}
+
+.dpm-wrapper:hover .sosmed-dpm{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.nama-dpm{
+    position: relative;
+    top: -20px;
+}
+
+.dpm-wrapper a:hover{
+    text-decoration: none;
+    color: #91C1B6;
+}
+
+
+/* dudu */
+.dudu-wrapper{
+    background-image: url("../images/wave-1.svg");
+    background-repeat: no-repeat;
+    /* background-position: center top; */
+    /* height: 100vh; */
+}
+
+.top-section{
+    text-align:center;
+    padding: 4rem 0 2rem 0;
+    max-width: 600px;
+    margin : 0 auto;
+}
+
+.table td, .table th {
+    padding: .4rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+.judul-dudu{
+    text-align: center;
+    padding: 0 0 1rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.accordion-section{
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.accordion {
+    background: rgb(47,61,102);
+    background: linear-gradient(180deg, rgba(47,61,102,1) 0%, rgba(69,135,149,1) 45%, rgba(138,190,182,1) 100%);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.muncul:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 750px) {
+    .br-mobile{
+        display: block;
+    }
+    .landing, .landing-kanan, .landing-kiri {
+        display: block;
+        height: auto;
+        padding: 10px !important;
+    }
+
+    .btn-bem-phone, .btn-dpm-phone{
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    .btn-bem, .btn-dpm, .btn-more-news, .garis-mobile{
+        display: none;
+    }
+
+    .lkl{
+        text-align: center;
+        margin: 10px auto 10px auto;
+        padding: 5px !important;
+    }
+
+    .lkr{
+        text-align: center;
+        margin: 40px auto 10px auto;
+        padding: 5px !important;
+    }
+
+    .lkrr img, .lkll img{
+        margin: auto !important;
+        display: block;
+    }
+
+    .btn-more-news-phone{
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .quote h5{
+        font-size: small;
+    }
+
+    .wave{
+        background-size: 680px 100px;
+    }
+
+    .wrap-ukk{
+        justify-content: center;
+    }
+
+    .boxUKK, .boxKomunitas{
+        margin: 0;
+    }
+
+    .judul{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+   
+    .tulisan-wadah{
+        margin: 0 !important;
+        padding: 10px !important;
+    }
+
+    .title{
+       font-size: medium;
+    }
+
+    .logo-about{
+        width: 80%;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .sejarah{
+        text-align: center;
+    }
+
+    .wrapper-card .box{
+        width: 85%;
+    }
+
+    .visi, .wrap-visi{
+        padding-left: 0;
+    }
+    .misi{
+        text-align: right;
+        padding-right: 0;
+    }
+    .col-12{padding-right: 0;}
+}

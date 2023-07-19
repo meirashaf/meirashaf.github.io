@@ -17,6 +17,34 @@
     line-height: 1.8;
 }
 
-.space-line1.6{
+.space-line1-6{
     line-height: 1.4;
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 15rem;
+    height: 9rem;
+    
+  }
+@media only screen and (min-width: 1025px) {
+.zoom:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5) translate(7rem);
+  }
+}
+
+.zoom-hp {
+    transition: transform .2s;
+    width: 15rem;
+    height: 36rem;
+    
+  }
+@media only screen and (min-width: 1025px) {
+.zoom-hp:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5) translate(7rem);
+  }
 }
