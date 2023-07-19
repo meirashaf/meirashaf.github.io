@@ -38,7 +38,7 @@
 .zoom-hp {
     transition: transform .2s;
     width: 15rem;
-    height: 36rem;
+    height: 27rem;
     
   }
 @media only screen and (min-width: 1025px) {
